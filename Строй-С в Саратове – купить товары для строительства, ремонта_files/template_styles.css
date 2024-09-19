@@ -1,0 +1,7 @@
+.popup.analogPopup {
+    position: fixed;
+    z-index: 3;
+    top: 3.1rem;
+    right: 1rem;
+    overflow: auto;
+}

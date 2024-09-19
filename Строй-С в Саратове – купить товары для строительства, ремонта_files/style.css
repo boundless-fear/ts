@@ -1,0 +1,12 @@
+@media (max-width: 768px){
+    .main-subcat{
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 8px 1fr 8px 1fr 8px 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: calc(100% - 30px);
+        grid-column-gap: 8px;
+        grid-row-gap: 16px;
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,92 @@
+#search-header{
+    width: 100%;
+    z-index: 3;
+    padding: 0;
+    max-width: 58%;
+}
+
+.search-modal-close{
+    display: none;
+}
+
+.search-modal-find{
+    display: none;
+}
+
+.nav__tool.flexbox{
+    position: relative;
+}
+
+@media(max-width: 940px){
+    .search-modal-find{
+        display: block;
+        padding: 32px 24px;
+        background: #fff;
+        border-top: 1px solid #E2E3E4;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+
+    .search-modal-find button{
+        border: none;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        border-radius: 8px;
+        background: #8C0D18;
+        height: 44px;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        width: 100%;
+    }
+    .search-modal-find button:disabled{
+        background: #E2E3E4;
+        color: #9B9B9C;
+    }
+
+    .nav__toolBoxCol #search-header{
+        max-width: 100%;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    #search-header ~ .nav__info{
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin-top: 16px;
+    }
+
+    #search-header.active{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100dvh;
+        z-index: 5;
+        background: #fff;
+    }
+
+    #search-header.active .search-header{
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    
+    #search-header.active .search-modal-close{
+        display: block;
+    }
+}

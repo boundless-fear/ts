@@ -1,0 +1,147 @@
+/*новый вход и регистрация*/
+.authorization__formBox{
+    display: none;
+}
+.authorization__active{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.authorization__signIn {
+    width: 100%;
+}
+.authorization-registration{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+}
+.authorization-registration a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+    color: #8C0D18;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.authorization-login-tel .authorization__inputBox{
+    margin-bottom: 16px;
+}
+.authorization-login-tel .authorization__label{
+    color: var(--500-black, #333) !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: 20px;
+    opacity: 1 !important;
+}
+.authorization__input{
+    border-color: #C1C1C1 !important;
+}
+.authorization-login-tel .authorization__input{
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    opacity: 0.9;
+}
+.authorization-login-tel input[data-control="phone"]{
+    padding-left: 3.8rem;
+    font-weight: 500;
+}
+.authorization-login-tel .authorization__inputBox svg{
+    position: absolute;
+    top: 2.99rem;
+    left: 0.6rem;
+}
+.authorization-tel__text{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #9C9C9C;
+    opacity: 0.9;
+}
+.tel-check{
+    margin-top: -4px;
+}
+
+/*вход по смс*/
+.authorization-sms-block{
+    flex-direction: column;
+    align-items: center;
+}
+.authorization-sms-block__title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.9;
+    width: 70%;
+    margin: 0 auto;
+}
+.authorization-sms{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 12px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}
+.authorization-sms .number_input{
+    width: 61px;
+    height: 48px;
+    background: #F6F7F9;
+    border-radius: 4px;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+}
+.authorization-sms .number_input:focus{
+    border-bottom: 2px solid #F3A601;
+}
+.authorization-sms-timer{
+    display: flex;
+    gap: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.9;
+    margin-bottom: 32px;
+}
+.authorization-sms-timer__count{
+    color: #F3A601;
+    text-align: center;
+}
+.authorization-getsms{
+    text-decoration: underline;
+}
+.authorization-sms-timer__count{
+    width: 45px;
+}
+.authorization-getsms{
+   pointer-events: none;
+}
+
+body .bxmaker-authuserphone-input__custom_field {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+body .bxmaker-authuserphone-input-phone__flag {
+    padding-top: 0px;
+}
+.inn-btn-check.inn-btn-check__grey{
+    background: #aaa;
+}

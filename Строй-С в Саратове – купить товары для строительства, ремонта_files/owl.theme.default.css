@@ -1,0 +1,6 @@
+.owl-theme .owl-nav {height: 100%;width: 100%;z-index: -1;
+  position: absolute; left: 0;
+  -webkit-tap-highlight-color: transparent; }
+.owl-theme .owl-nav .disabled {opacity: 0.5; cursor: default; }
+.owl-item{transition: 1s ease-out;}
+.owl-item:not(.active){opacity: 0;}

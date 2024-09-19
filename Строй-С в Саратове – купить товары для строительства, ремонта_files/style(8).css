@@ -1,0 +1,290 @@
+/* видеоконсультация - модалка временная */
+.video-consul-modal {
+    position: fixed;
+    bottom: 5vh;
+    left: calc(50% - 240px);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--200-stroke-bg, #BFC0C1);
+    background: var(--white, #FFF);
+    box-shadow: 0px 14px 30px 0px rgba(0, 0, 0, 0.14);
+    z-index: 7;
+    display: flex;
+    gap: 16px;
+    max-width: 512px;
+}
+
+.video-consul-text {
+    margin-bottom: 32px;
+}
+
+.video-consul-text p {
+    font-weight: 700;
+    line-height: 150%;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.video-consul-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.video-consul-btns button {
+    display: flex;
+    height: 41px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 33px;
+    border-radius: 8px;
+    background: var(--akzendent, #8C0D18);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+.video-consul__close {
+    cursor: pointer;
+    color: var(--akzendent, #8C0D18);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .video-consul-modal {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+}
+
+@media (max-width: 520px) {
+    .video-consul-modal {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        left: 0;
+        width: 99%;
+        margin: 0 auto;
+        margin-left: 1%;
+        box-sizing: border-box;
+    }
+
+    .video-consul-text p {
+        font-size: 16px;
+    }
+}
+
+/* видеоконсультация - форма заявки */
+.video-zayavka-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    z-index: 9;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-zayavka-form .price-delivery-modal__inner {
+    position: relative;
+    padding: 0 24px 24px;
+    max-width: 25rem;
+    width: 25rem;
+}
+
+.video-zayavka-form .authorization__input {
+    border-radius: 4px;
+    border: 1px solid var(--200-stroke-bg, #BFC0C1);
+    background: var(--50, #F7F7F9);
+}
+
+.video-zayavka-form .authorization__submit {
+    width: 100%;
+}
+
+.video-zayavka-form__closeBtn {
+    top: 1.4rem;
+    right: 1rem;
+}
+
+.video-zayavka-form .authorization__inputBox {
+    width: 100%;
+    max-width: 100%;
+    align-items: flex-start;
+}
+
+.video-zayavka-form .authorization__inputBox svg {
+    min-width: 13px;
+    min-height: 13px;
+}
+
+.video-zayavka-form .authorization__checkbox-label {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.video-zayavka-form .authorization__checkbox-label a {
+    display: initial;
+}
+
+@media (max-width: 768px) {
+    .video-zayavka-form {
+        box-sizing: border-box;
+    }
+    .video-zayavka-form{
+        height: calc(100% - 72px);
+    }
+    .video-zayavka-form .price-delivery-modal__inner {
+        height: 100%;
+        width: 100%;
+        max-height: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .video-zayavka-form__closeBtn {
+        top: 1.7rem;
+        right: 1rem;
+    }
+}
+
+/*кнопка видеоконсультации на странице товара */
+.video-zayavka-tovarpage {
+    width: 31%;
+    min-width: 138px;
+    display: flex;
+    align-items: center;
+    color: var(--500-black, #333);
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration-line: underline;
+    text-align: left;
+    gap: 8px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--red, #EB6D18);
+    background: var(--white, #FFF);
+}
+
+.price-functional .detailContent__askIcon,
+.price-functional .tinkoff__icon {
+    width: 31%;
+    min-width: 138px;
+}
+
+.price-functional .detailContent__ask {
+    width: 12px;
+}
+
+.price-functional .detailContent__ask {
+    width: 100%;
+    margin: 0;
+    padding: 12px;
+    font-size: 12px;
+}
+
+/* секция видеоконсультации на главной странице */
+.main-videocons .wrap {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.main-videocons .main-videocons__icon {
+    width: 30%;
+    border-radius: 16px;
+    background: var(--red, #EB6D18);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+.main-videocons .video-consul-inner {
+    width: 67%;
+    padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+    .main-videocons .wrap {
+        flex-direction: column;
+    }
+
+    .main-videocons .main-videocons__icon {
+        width: 100%;
+    }
+
+    .main-videocons .video-consul-inner {
+        padding: 40px 20px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+/* выезжающий блок видеоконсультации */
+.wow-video-cons {
+    position: fixed;
+    top: 36vh;
+    right: -107px;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    margin-top: 5px;
+    transition: right .2s linear;
+    z-index: 2;
+}
+
+.wow-video-cons:hover,
+.wow-video-cons:focus {
+    right: 0;
+}
+
+.wow-video-cons .video-zayavka-tovarpage {
+    max-width: 150px;
+    width: 150px;
+    min-width: 150px;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+
+    /* детальная страница кнопка  */
+    .video-zayavka-tovarpage {
+        width: 100%;
+        min-width: 100%;
+        display: flex;
+        height: 57px;
+        justify-content: center;
+        align-items: center;
+        color: var(--500-black, #333);
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        text-decoration-line: underline;
+        text-align: left;
+        gap: 8px;
+        padding: 0 10px;
+        border-radius: 8px;
+        border: 1px solid var(--red, #EB6D18);
+        background: var(--white, #FFF);
+    }
+}
+.field-input{
+    border-color: #8C0D18 !important; 
+}
+#politicCheck{
+    height: 33px;
+}
